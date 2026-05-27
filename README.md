@@ -38,9 +38,4 @@ A modern and responsive portfolio website focused on clean design, smooth intera
 
 
 
-
-
-
-
-
 <!--A modern and responsive personal portfolio website showcasing my projects, skills, experience, and contact information.-->
