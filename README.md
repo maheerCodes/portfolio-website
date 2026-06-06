@@ -1,7 +1,7 @@
 # portfolio-website
 
 🌐 Language:
-[English](README.md) | [বাংলা](README.bn.md)
+[English](README.md) | [বাংলা](/README/README.bn.md)
 
 ---
 ## 🗂️ CSS Architecture & File Structure
