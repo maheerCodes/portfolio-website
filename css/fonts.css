@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../assets/fonts_(woff2)/SpaceGrotesk-Light.woff2') format('woff2');
+  font-weight: 300 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts_(woff2)/subset-Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

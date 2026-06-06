@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-sheikhmaheernew",
+  "version": "1.0.0",
+  "description": "এই প্রজেক্টে CSS কে একাধিক ছোট, দায়িত্বভিত্তিক ফাইলে ভাগ করা হয়েছে, যাতে কোড maintain করা সহজ হয় এবং future scalability বজায় থাকে।",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./css/tailwind.css -o ./css/style.min.css --watch",
+    "build": "tailwindcss -i ./css/tailwind.css -o ./css/style.min.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "tailwindcss-cli": "^0.1.2"
+  }
+}

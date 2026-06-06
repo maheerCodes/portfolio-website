@@ -1,0 +1,190 @@
+<!-- 1(D), 2(DxA), 3(D), 4(DxA), 7(D), 8(D) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="preload"
+      href="assets/fonts_(woff2)/subset-Inter-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin/>
+    <link rel="preload"
+      href="/assets/fonts_(woff2)/SpaceGrotesk-Light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin/>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="js/variables.js" defer></script>
+    <script src="js/components.js" defer></script>
+    <script src="js/animation.js" defer></script>
+    <script src="js/cta.js" defer></script>
+    <!-- <script src="js/main.min.js" defer></script> -->
+</head>
+<body>
+<header>
+  <nav>
+    <div class="navContents">
+      <div class="navContent">MaheerCodes</div>
+      <div class="navContent">logo</div>
+      <div class="navContent">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/>
+        </svg>
+      </div>
+    </div>
+    <div class="progressBar"></div>
+  </nav>
+  <div class="navLowerTransparent">
+    <div class="navLower">
+      <div class="navLowerBtns">
+        <div class="navLowerBtn underlineSlideAnimation">Home</div>
+        <div class="navLowerBtn underlineSlideAnimation">Projects</div>
+        <div class="navLowerBtn underlineSlideAnimation">About</div>
+        <div class="navLowerBtn underlineSlideAnimation">Contact</div>
+      </div>
+    </div>
+  </div>
+  <div class="navLowerFullScreen">
+    <div class="navLowerFullScreenBtns">
+      <div class="combinar">
+        <div class="navLowerFullScreenBtn underlineSlideAnimation2">Home</div>
+        <button id="closeMenu" class="close-btn">
+          ✕
+        </button>
+      </div>
+      <div class="navLowerFullScreenBtn underlineSlideAnimation2">Projects</div>
+      <div class="navLowerFullScreenBtn underlineSlideAnimation2">About</div>
+      <div class="navLowerFullScreenBtn underlineSlideAnimation2">Contact</div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-wrapper">
+      <div class="heroLeft">
+        <div class="heroLeftContent">
+          <div id="name">Sheikh Mohammad Ali Maheer</div>
+          <div id="title">Full-Stack Web Developer</div>
+          <div id="statement">I build scalable, fast, and maintainable web applications.</div>
+        </div>
+        <div class="heroLeftBtns">
+          <button class="heroLeftBtn">View Projects</button>
+          <button class="heroLeftBtn">Contact Me</button>
+        </div>
+      </div>
+      <div class="heroRight">
+        <img src="#/assets/images_(webp)/mohammadAli.webp" alt="developerImage">
+      </div>
+      <div class="scroll-spacer"></div>
+    </div>
+  </section>
+  <div class="sectionDivider"></div>
+  <section class="projects">
+    <div class="projectsChild">
+
+    </div>
+  </section>
+  <section class="about">
+    <h2>About Me</h2>
+    <hr>
+    <span>
+      Full-stack developer with experience building
+      modern web applications using React and Node.js.
+      Focused on performance, clean code and scalability.
+    </span>
+  </section>
+  <section class="skills">
+    <h2>Skills</h2>
+    <hr>
+    <div class="forntend">
+      <h3>
+        FRONTEND
+      </h3>
+      <hr>
+      <ul type="circle">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>REACT</li>
+        <li>TAILWIND</li>
+        <li>BOOTSTRAP</li>
+      </ul>
+    </div>
+    <div class="backend">
+      <h3>
+        BACKEND
+      </h3>
+      <hr>
+      <ul type="circle">
+        <li>NODE.JS</li>
+        <li>EXPRESS.JS</li>
+      </ul>
+    </div>
+    <div class="database">
+      <h3>
+        DATABASE
+      </h3>
+      <hr>
+      <ul type="circle">
+        <li>MYSQL</li>
+        <li>MONGODB</li>
+      </ul>
+    </div>
+    <div class="tools">
+      <h3>
+        TOOLS
+      </h3>
+      <hr>
+      <ul type="circle">
+        <li>GIT</li>
+        <li>REST API</li>
+      </ul>
+    </div>
+    <div class="programmingLanguage">
+      <h3>
+        PROGRAMMING LANGUAGE
+      </h3>
+      <hr>
+      <ul type="circle">
+        <li>JAVASCRIPT</li>
+        <li>PYTHON</li>
+        <li>C</li>
+      </ul>
+    </div>
+  </section>
+  <section class="contact">
+    <h2>Contact</h2>
+    <hr>
+    <ul type="circle">
+      <li>Email</li>
+      <li>GitHub</li>
+      <li>LinkedIn</li>
+    </ul>
+  </section>
+</main>
+<footer>
+     <div class="footerTop">
+
+     </div> 
+     <div class="footerBottom">
+      <Span>
+        maheerCodes
+      </Span>
+     </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,176 @@
+/*
+🟡 home.css
+.hero {
+  min-height: 100vh;
+}
+
+
+.hero-title {
+  font-size: 0clamp(2.5rem, 5vw, 4rem);
+}
+
+✔ only home page
+*/
+
+
+
+main{
+  height: auto;
+  display: block;
+  gap: 0;
+
+}
+
+main section{
+  /* margin: 0;
+  padding: 0; */
+  overflow: hidden;
+}
+
+.hero {
+  height: auto;
+}
+
+.hero-wrapper{
+  margin-top: -6vh;
+  min-height: 110vh;
+  display: flex;
+}
+
+.heroLeft {
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0 0 2vw;
+  gap: 1.5rem;
+}
+
+.heroLeftContent {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#name {
+  font-size: clamp(64px, 68px, 72px);
+  font-weight: 750;
+  letter-spacing: -0.5px;
+  color: var(--TextColorPrimary);
+}
+#title {
+  font-family: var(--fontSpaceGrotesk);
+  font-weight: 550;
+  font-size: clamp(28px, 30px, 32px);
+  color: var(--TextColorSecondary);
+  letter-spacing: 0.3px;
+}
+#statement {
+  font-size: clamp(16px, 17vw, 18px);
+  font-weight: 400;
+  color: var(--TextColorMuted);
+}
+
+.heroLeftBtns {
+  font-size: clamp(14px, 15vw, 16px);
+  font-weight: 500;
+  display: flex;
+  gap: 1rem;
+}
+
+.heroLeftBtn:hover {
+  background: var(--SecondaryAccentElectricBlue);
+  color: var(--TextColorDark);
+  border: 2px solid var(--SecondaryAccentElectricBlue);
+  /* x-offset y-offset blur spread color */
+  box-shadow: 0 0 5px var(--SecondaryAccentElectricBlue);
+}
+
+.heroRight {
+  height: 100vh;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+
+
+.heroRight img vul {
+  padding-top: 80px;
+  border-radius: 1000px;  
+  width: 450px;
+  height: 650px;
+  object-fit: cover;
+  box-shadow: 0 0 120px rgba(30,202,211,0.2);
+}
+
+
+.sectionDivider {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid rgba(148,163,184,0.1);
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+/*HERO END*/
+
+
+
+
+.projects{
+  height: 110vh;
+  width: 100%;
+  background: red;
+}
+
+
+/*PROJECTS END*/
+
+
+
+.about{
+  height: 110vh;
+  width: 100%;
+  background: green;
+}
+
+
+/*ABOUT END*/
+
+
+
+.skills{
+  height: 110vh;
+  width: 100%;
+  background: red;
+}
+
+
+/*SKILLs END*/
+
+
+
+.contact{
+  height: 110vh;
+  width: 100%;
+  background: green;
+}
+
+
+/*CONTACT END*/
+
+
+
+footer{
+  width: 100%;
+  background: red;
+}

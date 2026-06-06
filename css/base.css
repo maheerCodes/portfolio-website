@@ -1,0 +1,98 @@
+/*
+🟡 base.css
+
+Global basic rules
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+✔ reset
+✔ body, h1–h6, p
+*/
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontInter);
+  background: var(--BackgroundDarkMode);   /* --Background */
+  color: var(--TextColorDark);
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+
+
+
+
+
+.underlineSlideAnimation {
+  position: relative;
+  display: inline-block;
+}
+
+.underlineSlideAnimation::before,
+.underlineSlideAnimation::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 0;
+  bottom: -5px;
+  background-color: var(--SecondaryAccentElectricBlue);
+  transition: width 0.3s ease;
+}
+
+/* Left side(→) e jabe */
+.underlineSlideAnimation::before {
+  left: -10px;
+}
+
+/* Right side(←) e jabe */
+.underlineSlideAnimation::after {
+  right: -10px;
+}
+
+/* Hover */
+.underlineSlideAnimation:hover::before,
+.underlineSlideAnimation:hover::after {
+  width: 100%;
+}
+
+
+
+
+.underlineSlideAnimation2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0%;
+  height: 2px;
+  background: #1ECAD3;
+  transition: width 0.3s ease;
+}
+
+.underlineSlideAnimation2:hover::after {
+  width: 100%;
+}

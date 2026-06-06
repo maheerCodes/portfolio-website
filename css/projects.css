@@ -1,0 +1,13 @@
+/*
+🟡 projects.css
+.project-card {
+  transition: transform var(--transition-fast);
+}
+
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+✔ only projects page
+*/

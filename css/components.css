@@ -1,0 +1,225 @@
+/*
+🟡 components.css
+
+Reusable UI
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius-md);
+}
+
+
+.card {
+  background: #111827;
+  border-radius: var(--radius-md);
+}
+
+✔ button
+✔ card
+✔ navbar
+✔ modal
+*/
+
+
+
+
+
+
+/* NAVBAR START*/
+
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background: var(--NavBackground); */
+  background: var(--TopNavBackground);
+  backdrop-filter: blur(12px);
+  border-bottom: var(--TopNavBorderBottom);
+
+  color: var(--NavTextColor);
+  position: fixed;
+  display: block;
+  transition: top 0.3s ease-in-out;
+  z-index: 3;
+}
+
+.navContents{
+  height: 6vh;
+  padding: 0 3vw 0 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.navContent{
+  border: 1px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.navContent:hover {
+  opacity: 0.9;
+}
+
+
+.progressBar{
+  width: 100%;
+  height: 1px;
+  background: var(--TextColorMuted);
+  bottom: 0;
+  left: 0;
+}
+
+
+.navLowerTransparent{
+  height: 5vh;
+  width: 70%;
+  bottom: 0vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: transparent;
+  border-radius: 100px;
+  color: transparent;
+  position: fixed;
+  z-index: 3;
+}
+
+
+.navLower{
+  height: 4vh;
+  width: 97%;
+  bottom: -8vh;
+  background: var(--navLowerBackground);
+  color: var(--NavTextColor);
+  position: fixed;
+  display: block;
+
+  backdrop-filter: blur(20px);
+  border: var(--NavLowerborder);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+
+  border-style: dashed;
+  border-radius: 100px;
+  padding: 1vh 1vw 0 1vw;
+  transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 2;
+  opacity: 1;
+}
+
+.navLowerBtns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  visibility: visible;
+}
+
+.navLowerBtn{
+  border: 1px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  visibility: visible;
+  letter-spacing: 1px;
+}
+
+.navLowerBtn:hover{
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* NAVBAR END*/
+
+
+
+button {
+  width: 9rem;
+  padding: 0.8rem 1.6rem;
+  border: 1px solid var(--SecondaryAccentElectricBlue);
+  border-radius: 100px;
+  background: var(--primary-color);
+  color: var(--SecondaryAccentTeal);
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+
+
+
+
+
+.navLowerFullScreen{
+  top: 0;
+  left: 0;
+  margin-bottom: 32px;
+  height: 100vh;
+  width: 100vw;
+  background: var(--BackgroundDarkMode);
+  position: fixed;
+  z-index: 3;
+  display: none;
+  opacity: 0;
+  transform: 0.98;
+  /* animation: slideLeft 0.3s ease-in-out; */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navLowerFullScreen .navLowerFullScreenBtns{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  height: 100%;
+  padding: 0 0 0 3vw;
+}
+
+.combinar {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  width: 100%;
+}
+
+.navLowerFullScreenBtn{
+  width: fit-content;
+  border: 1px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  position: relative;
+  letter-spacing: -1px;
+  font-size: 72px;
+  font-weight: 600;
+  color: #94A3B8;
+  transition: all 0.3s ease;
+}
+
+.navLowerFullScreenBtn:hover {
+  color: #1ECAD3;
+  letter-spacing: 2px;
+}
+
+
+.close-btn {
+  font-size: 28px;
+  color: #94A3B8;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #1ECAD3;
+  transform: rotate(90deg);
+}
