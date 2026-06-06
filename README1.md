@@ -1,0 +1,25 @@
+# portfolio-website
+A modern and responsive portfolio website focused on clean design, smooth interaction, and fast performance. Built with Tailwind CSS and JavaScript using reusable components, custom UI design, and mobile-first optimization.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--A modern and responsive personal portfolio website showcasing my projects, skills, experience, and contact information.-->
