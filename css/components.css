@@ -88,7 +88,7 @@ nav {
 .navLower{
   height: 4vh;
   width: 97%;
-  bottom: -8vh;
+  /* bottom: -8vh; */                                   bottom: 8vh;
   background: var(--navLowerBackground);
   color: var(--NavTextColor);
   position: fixed;
@@ -104,6 +104,10 @@ nav {
   transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
   z-index: 2;
   opacity: 1;
+}
+
+#nav-lower:hover {
+    opacity: 1;
 }
 
 .navLowerBtns{
