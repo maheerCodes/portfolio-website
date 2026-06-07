@@ -106,9 +106,9 @@ nav {
   opacity: 1;
 }
 
-#nav-lower:hover {
+/* #nav-lower:hover {
     opacity: 1;
-}
+} */
 
 .navLowerBtns{
   display: flex;
