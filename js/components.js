@@ -17,10 +17,13 @@ window.addEventListener("scroll", () => {
 
 let isInactive = false;                                          // NEW
 let mouseTriggered = false;                                      // NEW
+let firstHideDone = false;
 
 function showNavLower() {
     navLower.style.bottom = "0vh";
-    navLower.style.transition = "bottom 0.9s ease-in-out, opacity 1s ease-in-out";                             // NEW
+    navLower.style.transition = firstHideDone
+    ? "bottom 0.3s ease-in-out, opacity 1s ease-in-out"
+    : "bottom 0.9s ease-in-out, opacity 1s ease-in-out";                           // NEW
     navLower.style.opacity = "1";                                // NEW
     if (hideTimeout) clearTimeout(hideTimeout);
     hideTimeout = null; // Clear the timeout reference
@@ -49,13 +52,17 @@ window.addEventListener("mousemove", () => {
         navLower.style.transition = "bottom 0.9s ease-in-out";
         navLower.style.bottom = "-8vh";
         mouseTriggered = true;
+        firstHideDone = true;
     }
 });
 
 navLowerTransparent.addEventListener("mouseenter", showNavLower);
 
 navLowerTransparent.addEventListener("mouseleave", () => {
+    hideNavLowerWithDelay(5000);
+
     if (mouseTriggered) {
+        navLower.style.transition = "bottom 0.3s ease-in-out";
         navLower.style.bottom = "-8vh";
     }
 });
@@ -63,6 +70,8 @@ navLowerTransparent.addEventListener("mouseleave", () => {
 navLower.addEventListener("mouseenter", showNavLower);
 
 navLower.addEventListener("mouseleave", () => {
+    hideNavLowerWithDelay(5000);
+
     if (mouseTriggered) {
         navLower.style.transition = "bottom 0.3s ease-in-out";
         navLower.style.bottom = "-8vh";
